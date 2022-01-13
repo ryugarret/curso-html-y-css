@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style=" text-align: -webkit-center;">
+
+    <form id="Prueba" action="stub.html"
+    method="post" style="
+    border: 1px #000 solid;
+    margin: 45px;
+    padding: 30px;
+    background-color: ghostwhite;
+    text-align: center;">
+
+        <h2>Formulario de prueba</h2>
+
+        <fieldset>
+            <legend> Introduce tus datos a continuación</legend>
+
+            <div>
+                <input pattern="[A-Za-z]+" required type="text" placeholder="Nombre" style="text-align: center; width: 45%;"/>
+            </div>
+            <br>
+            <div>
+                <input pattern="[A-Za-z]+" required type="text" placeholder="Apellido" style="text-align: center; width: 45%;"/>
+            </div>
+            <br>
+            <div>
+                <input  required type="email" placeholder="e-mail" style="text-align: center; width: 45%;"/>
+            </div>
+            <br>
+            <div>
+                + <input pattern="[0-9]{3}" type="text"  name="tlf" placeholder="prefijo" style="text-align: center; width: 3.35%;"/>
+                <input pattern="[0-9]{8}" minlength="9" maxlength="9" type="text"  name="tlf" placeholder="telefono" style="text-align: center; width: 39.7%;"/>
+            </div>
+            <br>
+            <div>
+                <select name="Tipo de vía">
+                    <option value="1">Calle</option> 
+                    <option value="2">Avenida</option> 
+                    <option value="3">Urbanización</option>
+                    <option value="4">Paralela</option> 
+                    <option value="5">Polígono industrial</option> 
+                 </select>
+                 <input  required type="text" placeholder="Dirección" style="text-align: center; width: 34%;"/>
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Enviar" />
+            </div>
+        </fieldset>
+    </form>
+
+    <table class="default" border="1" style=" text-align: -webkit-center; background-color: darkseagreen;">
+        <caption>Una tabla con contenido aleatorio</caption>
+        <tr>
+            <td></td>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+        </tr>
+        <tr>
+            <th>A</th>
+            <td>Viernes</td>
+            <td colspan="2">Sábado</td>
+        </tr>
+        <tr>
+            <th>B</th>
+            <td>Lunes</td>
+            <td rowspan="2">Miercoles</td>
+            <td>Domingo</td>
+        </tr>
+        <tr>
+            <th>C</th>
+            <td>Martes</td>
+            <td>Jueves</td>
+        </tr>
+
+    </table>
+</body>
+</html>
